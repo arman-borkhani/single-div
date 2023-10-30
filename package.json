@@ -1,0 +1,18 @@
+{
+  "name": "single-div-drawing",
+  "version": "1.0.0",
+  "description": "CSS drawing using a single div",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --server --serveStatic --files \"./\"",
+    "sass": "sass scss/main.scss style.css --watch",
+    "start": "browser-sync start --server --serveStatic --files \"./\" | sass scss/main.scss style.css --watch"
+  },
+  "author": "Arman Borkhani",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "sass": "^1.69.5"
+  }
+}
