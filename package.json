@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "browser-sync start --server --serveStatic --files \"./\"",
     "sass": "sass scss/main.scss style.css --watch",
-    "start": "browser-sync start --server --serveStatic --files \"./\" | sass scss/main.scss style.css --watch"
+    "start": "browser-sync start --server --serveStatic --files \"./\" | sass scss/main.scss style.css --style=compressed --watch"
   },
   "author": "Arman Borkhani",
   "license": "ISC",
