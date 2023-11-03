@@ -7,3 +7,22 @@
 * {
   margin: 0;
 }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entry {
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 450px;
+  position: relative
+}
+
+@media only screen and (min-width: 992px) {
+  .entry {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
