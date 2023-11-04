@@ -1,0 +1,50 @@
+#bear {
+  --white: #fff7ed;
+  --brown: #6a4b24;
+  --dark-brown: #412914;
+
+  background-color: var(--white);
+
+  div,
+  div::before,
+  div::after {
+    position: absolute;
+  }
+
+  div {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(65px circle, var(--dark-brown) 24%, var(--brown) 25% 49%, transparent 50%) left top / 65px 65px no-repeat,
+                radial-gradient(65px circle, var(--dark-brown) 24%, var(--brown) 25% 49%, transparent 50%) right top / 65px 65px no-repeat;
+  }
+
+  div::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(20px circle, var(--dark-brown) 7px, var(--white) 8px 9px, transparent 10px) 55px 70px / 20px 20px no-repeat,
+                radial-gradient(20px circle, var(--dark-brown) 7px, var(--white) 8px 9px, transparent 10px) 125px 70px / 20px 20px no-repeat;
+    background-color: var(--brown);
+    box-shadow: inset 0px -5px rgba(65 41 20 / 20%);
+  }
+
+  div::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    border-radius: 30px 30px 20px 20px;
+    background: radial-gradient(30px circle at center 0, var(--dark-brown) 14px, transparent 15px) center 20px / 30px 15px no-repeat,
+                radial-gradient(20px circle at center 0, transparent 5px, var(--dark-brown) 6px 9px, transparent 10px ) 12px 34px / 20px 20px no-repeat,
+                radial-gradient(20px circle at center 0, transparent 5px, var(--dark-brown) 6px 9px, transparent 10px ) 27px 34px / 20px 20px no-repeat;
+    background-color: var(--white);
+  }
+}
