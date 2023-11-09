@@ -1,0 +1,62 @@
+#corgi {
+  --white: #fff7ed;
+  --black: #262626;
+  --orange: #fcb037;
+  --orange-light: #fcba4f;
+  --red: #f1605a;
+
+  background-color: #fbeeea;
+  opacity: 0.99;
+
+  div,
+  div::before,
+  div::after {
+    position: absolute;
+  }
+
+  div {
+    width: 180px;
+    height: 160px;
+    left: calc(50% - 90px);
+    top: calc(50% - 80px);
+    background:
+      conic-gradient(from 0 at 50% 0%, transparent 160deg, var(--white) 160deg 200deg, transparent 200deg) center 22px/ 60px 50px,
+      radial-gradient(18px circle, var(--black) 9px, transparent 10px) 45px 45px / 20px 20px,
+      radial-gradient(18px circle, var(--black) 9px, transparent 10px) 115px 45px / 20px 20px,
+      radial-gradient(30px circle at center 0, var(--white) 11px, var(--black) 12px 14px, transparent 15px ) 61px 94px / 30px 30px,
+      radial-gradient(30px circle at center 0, var(--white) 11px, var(--black) 12px 14px, transparent 15px ) 89px 94px / 30px 30px,
+      radial-gradient(var(--black) 14px, transparent 15px) center 75px / 30px 20px,
+      radial-gradient(18px circle at center 0, var(--red) 9px, transparent 10px) center 118px / 20px 10px,
+      linear-gradient(var(--red) 99%, transparent 1%) center 98px / 20px 20px,
+      radial-gradient(var(--white) 49%, transparent 50%) center 55px / 130px 90px,
+      radial-gradient(110px circle, var(--orange) 49%, transparent 50%) center left / 110px 110px,
+      radial-gradient(110px circle, var(--orange) 49%, transparent 50%) center right / 110px 110px,
+      radial-gradient(160px circle, var(--orange) 49%, transparent 50%) center / 160px 160px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    width: 112px;
+    height: 96px;
+    z-index: -1;
+    border: 30px solid var(--orange);
+    background-color: var(--orange-light);
+  }
+
+  div::before {
+    border-radius: 10% 20% 40% 20%;
+    right: -25px;
+    top: -30px;
+    transform: rotate(-45deg) skewX(-40deg);
+  }
+
+  div::after {
+    border-radius: 20% 20% 40% 20%;
+    left: -25px;
+    top: -30px;
+    transform: rotate(45deg) skewX(40deg);
+  }
+}
