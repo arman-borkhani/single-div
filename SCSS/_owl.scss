@@ -1,0 +1,76 @@
+#owl {
+  --white: #fff;
+  --purple: #602e53;
+  --black: #21102e;
+  --red: #d1475b;
+  --orange: #e08463;
+  --brown: #934842;
+
+  background-color: #efefdc;
+
+  div,
+  div::before,
+  div::after {
+    position: absolute;
+  }
+
+  div {
+    width: 240px;
+    height: 240px;
+    left: calc(50% - 120px);
+    top: calc(50% - 120px);
+    background:
+      radial-gradient(circle at center 0, var(--purple) 7px, transparent 8px) 92px 132px / 16px 8px,
+      radial-gradient(circle at center 0, var(--purple) 7px, transparent 8px) 68px 132px / 16px 8px,
+      radial-gradient(circle at center 0, var(--purple) 7px, transparent 8px) 80px 148px / 16px 8px,
+      radial-gradient(circle at center 0, var(--purple) 7px, transparent 8px) 80px 116px / 16px 8px,
+      radial-gradient(var(--red) 29px, transparent 30px) 59px 95px / 60px 60px,
+      linear-gradient(var(--purple) 99%, transparent 1%) 88px 85px / 30px 40px,
+      radial-gradient(circle at center 0, transparent 6px, var(--black) 7px 15px, transparent 16px ) 136px 48px / 32px 16px,
+      radial-gradient(circle at center 0, transparent 6px, var(--black) 7px 15px, transparent 16px ) 72px 48px / 32px 16px,
+      radial-gradient(var(--white) 31px, transparent 32px) 120px 16px / 64px 64px,
+      radial-gradient(var(--white) 31px, transparent 32px) 58px 16px / 64px 64px,
+      linear-gradient(var(--white) 99%, transparent 1%) 85px 49px / 70px 30px,
+      radial-gradient(circle at center 0, var(--red) 29px, transparent 30px) 150px top / 60px 60px,
+      radial-gradient(var(--red) 14px, transparent 15px) 138px 6px / 30px 30px,
+      radial-gradient(circle at 100% 100%, var(--red) 47px, transparent 48px) 104px top / 48px 48px,
+      radial-gradient(circle at center 0, var(--red) 29px, transparent 30px) 30px top / 60px 60px,
+      radial-gradient(var(--red) 14px, transparent 15px) 72px 6px / 30px 30px,
+      radial-gradient(circle at 0 100%, var(--red) 47px, transparent 48px) 88px top / 48px 48px,
+      radial-gradient(var(--purple) 47px, transparent 48px) 104px top / 96px 96px,
+      radial-gradient(var(--purple) 47px, transparent 48px) 40px top / 96px 96px,
+      radial-gradient(var(--red) 59px, transparent 60px) 54px 68px / 120px 120px,
+      linear-gradient(-60deg, transparent 40%, var(--brown) 1%) 50px bottom / 30px 30px,
+      linear-gradient(var(--brown) 99%, transparent 1%) center 187px / 200px 25px;
+    background-repeat: no-repeat;
+  }
+
+  div::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 156px;
+    bottom: 0;
+    right: 42px;
+    border-radius: 0 80px 0 100px;
+    background: linear-gradient(var(--brown) 99%, transparent 1%) center 104px / 100px 25px no-repeat;
+    background-color: var(--purple);
+  }
+
+  div::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--orange);
+    top: 64px;
+    left: 105px;
+    border-radius: 40% 50% 40% 0;
+    transform: rotate(-45deg);
+    box-shadow: 
+    -60px 90px 0 -7px var(--orange),
+    -70px 80px 0 -7px var(--orange),
+    -90px 60px 0 -7px var(--orange),
+    -100px 50px 0 -7px var(--orange);
+  }
+}
