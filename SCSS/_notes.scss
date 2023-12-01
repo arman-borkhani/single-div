@@ -1,0 +1,55 @@
+#notes {
+  --black: #191919;
+  --white: #fff;
+  --coral: #fe5f57;
+  --dark-coral: #a64942;
+
+  background-color: #fff4f0;
+
+  div {
+    position: absolute;
+    width: 364px;
+    height: 152px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:
+    linear-gradient(var(--coral) 100%, transparent) 314px 26px / 50px 12px, 
+    linear-gradient(var(--coral) 100%, transparent) 314px top / 50px 12px,
+    linear-gradient(var(--dark-coral) 100%, transparent) 226px top / 50px 12px,
+    linear-gradient(var(--coral) 100%, transparent) 50px top / 100px 12px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 62px;
+    height: 52px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--coral);
+    border-radius: 50%;
+    box-shadow: 
+    88px 0 0 var(--coral),
+    176px 0 0 var(--dark-coral),
+    264px 0 0 var(--coral);
+  }
+
+  div::after {
+    width: 12px;
+    height: 128px;
+    bottom: 24px;
+    left: 50px;
+    background-color: var(--coral);
+    box-shadow: 
+    88px 0 0 var(--coral),
+    176px 0 0 var(--dark-coral),
+    264px 0 0 var(--coral);
+  }  
+}
