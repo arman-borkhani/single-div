@@ -1,0 +1,53 @@
+#piano {
+  --black: #191919;
+  --white: #fff;
+
+  background-color: #a9cec2;
+
+  div {
+    position: absolute;
+    width: 230px;
+    height: 124px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: var(--black);
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 26px;
+    height: 88px;
+    top: 30px;
+    left: 6px;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: 
+    32px 0 0 var(--white),
+    64px 0 0 var(--white),
+    96px 0 0 var(--white),
+    128px 0 0 var(--white),
+    160px 0 0 var(--white),
+    192px 0 0 var(--white);
+  }
+
+  div::after {
+    width: 20px;
+    height: 44px;
+    top: 30px;
+    left: 25px;
+    background-color: var(--black);
+    box-shadow: 
+    32px 0 0 var(--black),
+    96px 0 0 var(--black),
+    128px 0 0 var(--black),
+    160px 0 0 var(--black);
+  }  
+}
