@@ -1,0 +1,110 @@
+#skyscraper {
+  --blue: #5195ed;
+  --light-blue: #72c2f7;
+  --dark-blue: #4f7be1;
+  --robin: #8ae6cd;
+  --maximum-blue: #4bb4c2;
+  --arsenic: #3c3647;
+  --cyan: #2a7cb4;
+  --peach-orange: #facc91;
+  --sandy-brown: #f19f6f;
+  --fuzzy-wuzzy: #c77661;
+  --dark-salmon: #f19f70;
+  --rose-taupe: #965557;
+  --copper: #d48164;
+  --green: #676a4d;
+  --light-green: #97984d;
+
+  background-color: #e6f4f1;
+
+  div {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 332px;
+    height: 340px;
+    background:
+    // Right wall
+    linear-gradient(to right, var( --rose-taupe) 8px, var(--fuzzy-wuzzy) 8px) 280px 303px / 50px 8px,
+    linear-gradient(to right, var(--copper) 8px, var(--peach-orange) 8px) 280px bottom / 48px 30px,
+
+    // Right building
+    linear-gradient(var(--rose-taupe), var(--rose-taupe)) 227px 267px / 56px 9px,
+    linear-gradient(var(--dark-salmon), var(--dark-salmon)) 259px bottom / 6px 66px,
+    linear-gradient(var(--dark-salmon), var(--dark-salmon)) 245px bottom / 6px 66px,
+    linear-gradient(var(--dark-salmon), var(--dark-salmon)) 274px bottom / 7px 66px,
+    linear-gradient(var(--dark-salmon), var(--dark-salmon)) 229px bottom / 7px 66px,
+    linear-gradient(var(--dark-salmon), var(--dark-salmon)) 230px 275px / 50px 10px,
+    linear-gradient(var(--dark-salmon), var(--dark-salmon)) 230px bottom / 50px 10px,
+    repeating-linear-gradient(180deg, var(--arsenic) 0 10px, var(--dark-salmon) 10px 18px) 230px 285px / 50px 46px,
+
+    // Left building
+    linear-gradient(var(--sandy-brown), var(--sandy-brown)) 21px 285px / 80px 9px,
+    linear-gradient(var(--fuzzy-wuzzy), var(--fuzzy-wuzzy)) 27px 278px / 68px 12px,
+    linear-gradient(var(--peach-orange), var(--peach-orange)) 67px bottom / 6px 48px,
+    linear-gradient(var(--peach-orange), var(--peach-orange)) 49px bottom / 6px 48px,
+    linear-gradient(var(--peach-orange), var(--peach-orange)) 86px bottom / 12px 48px,
+    linear-gradient(var(--peach-orange), var(--peach-orange)) 24px bottom / 12px 48px,
+    repeating-linear-gradient(180deg, var(--peach-orange) 0 7px, var(--arsenic) 7px 14px) 25px bottom / 72px 48px,
+
+    // Right tower
+    linear-gradient(var(--robin), var(--robin)) 268px bottom / 5px 204px,
+    linear-gradient(var(--robin), var(--robin)) 251px bottom / 5px 204px,
+    linear-gradient(var(--robin), var(--robin)) 287px bottom / 6px 204px,
+    linear-gradient(var(--robin), var(--robin)) 233px bottom / 6px 204px,
+    linear-gradient(var(--robin), var(--robin)) 233px 134px / 60px 16px,
+    repeating-linear-gradient(180deg, var(--robin) 0 6px, var(--maximum-blue) 6px 12px) 234px bottom / 58px 204px,
+    linear-gradient(var(--maximum-blue), var(--maximum-blue)) 241px 128px / 44px 8px,
+
+    // Left tower
+    linear-gradient(var(--arsenic), var(--arsenic)) 74px bottom / 38px 80px,
+    linear-gradient(var(--robin), var(--robin)) 37px bottom / 7px 199px,
+    linear-gradient(var(--robin), var(--robin)) 92px bottom / 7px 199px,
+    repeating-linear-gradient(180deg, var(--robin) 0 7px, var(--maximum-blue) 7px 12px) 38px bottom / 60px 199px,
+
+    // Center tower
+    linear-gradient(var(--light-blue), var(--light-blue)) 209px bottom / 10px 320px,
+    linear-gradient(var(--light-blue), var(--light-blue)) 112px bottom / 10px 320px,
+    linear-gradient(to right, var(--dark-blue) 24px, var(--light-blue) 24px 29px, var(--dark-blue) 29px 77px, var(--light-blue) 77px 82px, var(--dark-blue) 82px) center bottom / 106px 24px,
+    linear-gradient(var(--light-blue), var(--light-blue)) center bottom / 106px 32px,
+    linear-gradient(var(--light-blue), var(--light-blue)) center 20px / 106px 16px,
+    repeating-linear-gradient(180deg, var(--light-blue) 0 8px, var(--blue) 8px 16px) center bottom / 106px 320px,
+    linear-gradient(var(--blue), var(--blue)) center 10px / 84px 14px,
+    linear-gradient(var(--dark-blue), var(--dark-blue)) center 2px / 66px 10px,
+
+    // Center tower left and right walls
+    linear-gradient(var(--cyan), var(--cyan)) 97px bottom / 16px 112px,
+    linear-gradient(var(--cyan) 80px, var(--arsenic) 80px) 219px bottom / 16px 140px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    background-color: var(--robin);
+    width: 62px;
+    height: 28px;
+    left: 37px;
+    top: 113px;
+    clip-path: polygon(0 100%, 75% 0, 100% 30%, 100% 100%);
+  }
+
+  div::after {
+    width: 20px;
+    height: 80px;
+    border-radius: 100% 100% 100% 100%/100% 100% 50% 50%;
+    background-color: var(--green);
+    right: 16px;
+    bottom: -35px;
+    box-shadow: 
+    -282px 16px 0 -2px var(--light-green),
+    -296px 0 0 0 var(--green);
+  }
+}

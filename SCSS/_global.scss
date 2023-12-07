@@ -25,4 +25,10 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+
+  .entry--full {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 500px;
+  }
 }
