@@ -1,0 +1,67 @@
+#rook {
+  --sunny: #f7ec7d;
+  --bg-color: #2f4858;
+
+  background-color: var(--bg-color);
+
+  div {
+    position: absolute;
+    width: 176px;
+    height: 238px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: 
+    radial-gradient(var(--sunny) 6px, transparent 6px) 132px top / 12px 12px,
+    linear-gradient(var(--sunny), var(--sunny)) 132px 6px / 12px 58px,
+  
+    radial-gradient(var(--sunny) 6px, transparent 6px) 82px top / 12px 12px,
+    linear-gradient(var(--sunny), var(--sunny)) 82px 6px / 12px 58px,
+
+    radial-gradient(var(--sunny) 6px, transparent 6px) 32px top / 12px 12px,
+    linear-gradient(var(--sunny), var(--sunny)) 32px 6px / 12px 58px,
+
+    radial-gradient(var(--sunny) 12px, transparent 12px) 120px 52px / 24px 24px,
+    radial-gradient(var(--sunny) 12px, transparent 12px) 32px 52px / 24px 24px,
+    linear-gradient(var(--sunny), var(--sunny)) center 52px / 88px 24px,
+
+    radial-gradient(var(--sunny) 6px, transparent 6px) 114px 82px / 12px 12px,
+    radial-gradient(var(--sunny) 6px, transparent 6px) 50px 82px / 12px 12px,
+    linear-gradient(var(--sunny), var(--sunny)) center 82px / 64px 12px,
+
+    radial-gradient(var(--sunny) 6px, transparent 6px) 144px 188px / 12px 12px,
+    radial-gradient(var(--sunny) 6px, transparent 6px) 20px 188px / 12px 12px,
+    linear-gradient(var(--sunny), var(--sunny)) center 188px / 124px 12px,
+
+    radial-gradient(var(--bg-color) 94px, transparent 95px) -127px 18px / 190px 190px,
+    radial-gradient(var(--bg-color) 94px, transparent 95px) 113px 18px / 190px 190px, 
+    linear-gradient(var(--sunny), var(--sunny)) center 100px / 110px 82px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 176px;
+    height: 32px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--sunny);
+    border-radius: 25px 25px 15px 15px;
+  }
+
+  div::after {
+    width: 38px;
+    height: 56px;
+    top: 0;
+    left: 44px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    box-shadow: 50px 0 0 var(--bg-color);
+  }  
+}
