@@ -1,0 +1,46 @@
+#pawn {
+  --jelly-bean: #d86f45;
+  --bg-color: #fff5ee;
+
+  background-color: var(--bg-color);
+
+  div {
+    position: absolute;
+    width: 176px;
+    height: 238px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: 
+    radial-gradient(var(--jelly-bean) 30px, transparent 31px) center 1px / 62px 62px,
+    radial-gradient(var(--bg-color) 94px, transparent 95px) -126px 16px / 190px 190px,
+    radial-gradient(var(--bg-color) 94px, transparent 95px) 112px 16px / 190px 190px, 
+    linear-gradient(var(--jelly-bean), var(--jelly-bean)) center 100px / 110px 80px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 176px;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--jelly-bean);
+    border-radius: 25px 25px 15px 15px;
+  }
+
+  div::after {
+    width: 100px;
+    height: 26px;
+    top: 68px;
+    left: 38px;
+    background-color: var(--jelly-bean);
+    border-radius: 10px 10px 15px 15px;
+  }  
+}
