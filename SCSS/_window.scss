@@ -1,0 +1,70 @@
+#window {
+  --turquoise: #34d0e9;
+  --blue-100: #16a7d4;
+  --blue-200: #12a4D7;
+  --blue-300: #0d7eb8;
+  --bg-color: #fff5ee;
+  --white: #f0f0f7;
+  --arsenic: #413e53;
+
+  background-color: #e9fdff;
+
+  div {
+    position: absolute;
+    width: 314px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    background: 
+    linear-gradient(var(--arsenic), var(--arsenic)) 164px 98px / 50px 108px,
+    linear-gradient(var(--arsenic), var(--arsenic)) 100px 98px / 50px 108px,
+    linear-gradient(var(--arsenic), var(--arsenic)) center 34px / 114px 54px,
+    linear-gradient(var(--white), var(--white)) center 24px / 134px 192px,
+    linear-gradient(var(--blue-300), var(--blue-300)) center 12px / 182px 216px,
+    linear-gradient(var(--blue-200), var(--blue-200)) center bottom / 182px 12px,
+    linear-gradient(var(--blue-200), var(--blue-200)) center top / 182px 12px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 216px;
+    bottom: 12px;
+    background: 
+    linear-gradient(var(--turquoise), var(--turquoise)) center 136px / 54px 12px,
+    linear-gradient(var(--turquoise), var(--turquoise)) center 44px / 54px 12px,
+    linear-gradient(var(--turquoise), var(--turquoise)) center 64px / 38px 64px,
+    linear-gradient(var(--turquoise), var(--turquoise)) center 156px / 38px 28px,
+    linear-gradient(var(--turquoise), var(--turquoise)) center 8px / 38px 28px;
+    background-color: var(--blue-100);
+    background-repeat: no-repeat;
+    border: 12px solid var(--turquoise);
+    transform-style: preserve-3d;
+    transform-origin: right center;
+  }
+
+  div::before {
+    left: 0;
+    animation: flip 1600ms ease-out infinite alternate;
+  }
+
+  div::after {
+    right: 0;
+  }
+
+  @keyframes flip {
+    0% {
+      transform: rotateY(0);
+    }
+
+    40%, 100% {
+      transform: rotateY(180deg);
+    }
+  }
+}  
