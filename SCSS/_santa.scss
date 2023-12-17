@@ -1,0 +1,79 @@
+#santa {
+  --skin: #f2bc98;
+  --skin-dark: #e6a278;
+  --red: #fe5f57;
+  --red-dark: #f05c55;
+  --white: #fff;
+  --blue: #1f2a4a;
+
+  background-color: #ffd7d5;
+  opacity: 0.99;
+
+  div {
+    position: absolute;
+    width: 294px;
+    height: 352px;
+    top: calc(50% - 176px);
+    left: calc(50% - 110px);
+    background:
+    // Eyebrows
+    linear-gradient(var(--white), var(--white)) 128px 120px / 30px 10px,
+    linear-gradient(var(--white), var(--white)) 60px 120px / 30px 10px,
+    // Nose
+    radial-gradient(var(--skin) 9px, transparent 10px) 98px 160px / 20px 20px,
+    // Mouth
+    radial-gradient(circle at center 0, var(--blue) 36px, transparent 37px) 73px 206px / 74px 37px,
+    // Beard
+    radial-gradient(var(--white) 37px, transparent 38px) 70px bottom / 76px 76px,
+    radial-gradient(var(--white) 37px, transparent 38px) 122px 247px / 76px 76px,
+    radial-gradient(var(--white) 37px, transparent 38px) 22px 247px / 76px 76px,
+    radial-gradient(var(--white) 37px, transparent 38px) 144px 202px / 76px 76px,
+    radial-gradient(var(--white) 37px, transparent 38px) 0 202px / 76px 76px,
+    radial-gradient(var(--white) 24px, transparent 25px) 156px 170px / 50px 50px,
+    radial-gradient(var(--white) 24px, transparent 25px) 14px 170px / 50px 50px,
+    linear-gradient(var(--white), var(--white)) 38px 170px / 140px 122px,
+    // Eyes 
+    radial-gradient(var(--blue) 5px, transparent 6px) 136px 138px / 12px 12px,
+    radial-gradient(var(--blue) 5px, transparent 6px) 68px 138px / 12px 12px,
+    linear-gradient(var(--skin-dark), var(--skin-dark)) 38px 149px / 60px 22px,
+    radial-gradient(circle at center bottom, var(--skin-dark) 29px, transparent 30px) 118px 120px / 60px 30px,
+    radial-gradient(circle at center bottom, var(--skin-dark) 29px, transparent 30px) 38px 120px / 60px 30px,
+    // Face
+    linear-gradient(var(--skin), var(--skin)) 38px 137px / 140px 70px,
+    radial-gradient(var(--skin) 70px, transparent 70px) 38px 66px / 140px 140px,
+    // Hat
+    radial-gradient(var(--red) 74px, transparent 75px) 34px top / 150px 150px,
+    radial-gradient(var(--white) 19px, transparent 20px) 252px 65px / 40px 40px, 
+    // Hair
+    linear-gradient(var(--white), var(--white)) 167px 110px / 16px 50px,
+    linear-gradient(var(--white), var(--white)) 33px 110px / 16px 50px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 170px;
+    height: 46px;
+    top: 66px;
+    left: 23px;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+
+  div::after {
+    width: 150px;
+    height: 75px;
+    top: 38px;
+    left: 106px;
+    background-color: var(--red-dark);
+    border-radius: 0 0 75px 75px;
+    z-index: -1;
+    transform: rotateZ(30deg);
+  }  
+}
