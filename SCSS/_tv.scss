@@ -1,0 +1,81 @@
+#tv {
+  --white: #c1c8c7;
+  --black: #1b173b;
+  --blue: #1a254c;
+  --light-blue: #1a4369;
+  --dark-blue: #2a2345;
+  --metallic-blue: #3e567a;
+  --wenge: #684a60;
+  --brown: #9f777c;
+  --dark-brown: #433754;
+  --gray: #acb6c0;
+  --light-gray : #717A92;
+  --dark-gray: #617b99;
+
+  background-color: #fbeaff;
+
+  div {
+    width: 360px;
+    height: 314px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: 
+    /* Control Buttons */
+    radial-gradient(var(--metallic-blue) 21px, transparent 22px) 224px 159px / 44px 44px,
+    radial-gradient(var(--metallic-blue) 21px, transparent 22px) 224px 106px / 44px 44px,
+    /* Sound Output */
+    repeating-linear-gradient(var(--black) 0 4px, var(--dark-brown) 4px 10px) 217px 212px / 56px 64px,
+    /* Screen Section */
+    linear-gradient(to right, var(--dark-blue) 200px, var(--dark-brown) 200px) 14px 90px / 262px 194px,
+    /* Body */
+    linear-gradient(to right, var(--wenge) 290px, var(--brown) 290px) left 74px / 360px 226px,
+    /* Antenna */
+    linear-gradient(to right, var(--blue) 62px, var(--light-blue) 62px) 208px 64px / 76px 12px,
+    linear-gradient(-60deg, transparent 50%, var(--dark-gray) calc(50% + 1px) 60%, transparent calc(60% + 1px)) 250px top / 54px 74px,
+    linear-gradient(60deg, transparent 50%, var(--dark-gray) calc(50% + 1px) 60%, transparent calc(60% + 1px)) 180px top / 54px 74px,
+    /* Bottom Section */
+    linear-gradient(to right, var(--blue) 252px, var(--light-blue) 252px) 18px bottom / 326px 20px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 180px;
+    height: 174px;
+    top: 100px;
+    left: 24px;
+    border-radius: 20px;
+    background: radial-gradient(var(--white) 65%, transparent calc(65% + 1px)) center -30px / 340px 118px no-repeat;
+    background-color: var(--gray);
+    box-shadow: inset 6px 0 var(--dark-gray);
+  }
+
+  div::after {
+    width: 44px;
+    height: 98px;
+    left: 224px;
+    top: 105px;
+    background: 
+    linear-gradient(45deg, transparent 40%, var(--light-gray) calc(40% + 1px) 54%, var(--gray) calc(54% + 1px) 60%, transparent calc(60% + 1px)) left bottom / 44px 44px,
+    radial-gradient(var(--blue) 21px, transparent 22px) left bottom / 44px 44px,
+    linear-gradient(30deg, transparent 40%, var(--light-gray) calc(40% + 1px) 54%, var(--gray) calc(54% + 1px) 60%, transparent calc(60% + 1px)) left top / 44px 44px,
+    radial-gradient(var(--blue) 21px, transparent 22px) left top / 44px 44px;
+    background-repeat: no-repeat;
+    mask-image: radial-gradient(var(--black) 16px, transparent 17px), radial-gradient(circle, var(--black) 16px, transparent 17px);
+    -webkit-mask-image: radial-gradient(var(--black) 16px, transparent 17px), radial-gradient(circle, var(--black) 16px, transparent 17px);
+    mask-position: left top, left bottom;
+    -webkit-mask-position: left top, left bottom;
+    mask-size: 44px 44px;
+    -webkit-mask-size: 44px 44px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+  }
+}
