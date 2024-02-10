@@ -64,10 +64,8 @@
     left: 224px;
     top: 105px;
     background: 
-    linear-gradient(45deg, transparent 40%, var(--light-gray) calc(40% + 1px) 54%, var(--gray) calc(54% + 1px) 60%, transparent calc(60% + 1px)) left bottom / 44px 44px,
-    radial-gradient(var(--blue) 21px, transparent 22px) left bottom / 44px 44px,
-    linear-gradient(30deg, transparent 40%, var(--light-gray) calc(40% + 1px) 54%, var(--gray) calc(54% + 1px) 60%, transparent calc(60% + 1px)) left top / 44px 44px,
-    radial-gradient(var(--blue) 21px, transparent 22px) left top / 44px 44px;
+    linear-gradient(45deg, var(--blue) 40%, var(--light-gray) calc(40% + 1px) 54%, var(--gray) calc(54% + 1px) 60%, var(--blue) calc(60% + 1px)) left bottom / 44px 44px,
+    linear-gradient(30deg, var(--blue) 40%, var(--light-gray) calc(40% + 1px) 54%, var(--gray) calc(54% + 1px) 60%, var(--blue) calc(60% + 1px)) left top / 44px 44px;
     background-repeat: no-repeat;
     mask-image: radial-gradient(var(--black) 16px, transparent 17px), radial-gradient(circle, var(--black) 16px, transparent 17px);
     -webkit-mask-image: radial-gradient(var(--black) 16px, transparent 17px), radial-gradient(circle, var(--black) 16px, transparent 17px);
