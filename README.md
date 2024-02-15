@@ -21,3 +21,5 @@ For some illustrations, I used different sources that can be seen in the table b
 | 10 | Rook | [CSSBattle](https://cssbattle.dev/play/151) |
 | 11 | Santa | - |
 | 12 | Computer | [Dribbble](https://dribbble.com/shots/17889778-Retro-Discovery) |
+| 13 | TV | [Dribbble](https://dribbble.com/shots/1377575-Vintage-Technology-Icons) |
+| 14 | Lumberjack | [Dribbble](https://dribbble.com/shots/1832404-Lumberjack) |
