@@ -1,0 +1,86 @@
+#flamingo {
+  --white: #fff;
+  --pink: #f9c0ce;
+  --pink-100: #f9baca;
+  --pink-200: #f8b0c2;
+  --pink-300: #f7a6ba;
+  --pink-400: #f69eb4;
+  --pink-500: #f092a5;
+  --gray: #e1e9ee;
+  --gray-100: #d6e2e5;
+  --gray-200: #dae5e7;
+  --gray-300: #c6d1d6;
+  --gray-400: #b4c8ce;
+  --gray-500: #a6afb8;
+  --dark-blue: #363851;
+
+  background-color: #f8f8f2;
+
+  div {
+    width: 258px;
+    height: 332px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: 
+    /* Legs */
+    radial-gradient(var(--gray-400) 4px, transparent 5px) 80px 220px / 10px 10px,
+    radial-gradient(circle at center 100%, var(--dark-blue) 15px, transparent 16px) 82px 316px / 32px 16px,
+    radial-gradient(circle at 0 center, var(--dark-blue) 15px, transparent 16px) 129px 222px / 16px 32px,
+    linear-gradient(var(--gray-100), var(--gray-100)) 82px 192px / 6px 140px,
+    radial-gradient(circle at 0 center, var(--gray-100) 21px, transparent 22px) 82px 161px / 23px 46px,
+    linear-gradient(var(--gray-200), var(--gray-200)) 18px 222px / 115px 6px,
+    /* Eye */
+    radial-gradient(circle at center 100%, var(--dark-blue) 8px, transparent 9px) 157px 26px / 18px 9px,
+    radial-gradient(var(--white) 19px, transparent 20px) 145px 15px / 40px 40px,
+    /* Beak */
+    radial-gradient(circle at 0 100%, var(--dark-blue) 35px, transparent 36px) right 13px / 36px 36px,
+    linear-gradient(var(--gray), var(--gray)) 179px 13px / 43px 36px,
+    radial-gradient(circle at 0 0, var(--gray-500) 29px, transparent 30px) 179px 30px / 30px 30px,
+    /* Head */
+    radial-gradient(var(--pink-500) 27px, transparent 28px) 133px 7px / 56px 56px,
+    radial-gradient(circle at 100% center, var(--pink-500) 34px, transparent 35px) 126px top / 35px 70px,
+    /* Neck */
+    radial-gradient(circle at 0 center, transparent 37px, var(--pink-500) 38px 51px, transparent 52px) 161px 49px / 52px 104px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    width: 86px;
+    height: 46px;
+    left: 18px;
+    top: 186px;
+    transform: rotate(-45deg);
+    background: 
+    radial-gradient(var(--gray-400) 4px, transparent 5px) left top / 10px 10px,
+    linear-gradient(var(--gray-200), var(--gray-200)) left 2px / 86px 6px,
+    radial-gradient(circle at center 0, var(--gray-300) 22px, transparent 23px) right 2px / 46px 23px;
+    background-repeat: no-repeat;
+  }
+
+  div::after {
+    width: 174px;
+    height: 92px;
+    top: 83px;
+    left: 0;
+    background: 
+    radial-gradient(circle at center 100%, var(--pink) 14px, transparent 15px) 120px 60px / 30px 15px,
+    radial-gradient(circle at center 100%, var(--pink-100) 28px, transparent 29px) 92px 46px / 58px 29px,
+    radial-gradient(circle at center 100%, var(--pink-200) 43px, transparent 44px) 62px 31px / 88px 44px,
+    radial-gradient(circle at center 100%, var(--pink-300) 59px, transparent 60px) 30px 15px / 120px 60px,
+    radial-gradient(circle at center 100%, var(--pink-400) 74px, transparent 75px) left top / 150px 75px,
+    linear-gradient(var(--pink-500), var(--pink-500)) left 78px / 34px 4px,
+    linear-gradient(var(--pink-500), var(--pink-500)) 14px 85px / 20px 3px,
+    linear-gradient(var(--pink-500), var(--pink-500)) 34px bottom / 115px 50px,
+    radial-gradient(var(--pink-500) 24px, transparent 25px) right bottom / 50px 50px;
+    background-repeat: no-repeat;
+  }
+}
