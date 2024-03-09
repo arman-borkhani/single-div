@@ -23,3 +23,5 @@ For some illustrations, I used different sources that can be seen in the table b
 | 12 | Computer | [Dribbble](https://dribbble.com/shots/17889778-Retro-Discovery) |
 | 13 | TV | [Dribbble](https://dribbble.com/shots/1377575-Vintage-Technology-Icons) |
 | 14 | Lumberjack | [Dribbble](https://dribbble.com/shots/1832404-Lumberjack) |
+| 15 | Flamingo | [Dribbble](https://dribbble.com/shots/11194514-The-Birds) |
+| 16 | Letter A | [CSSBattle](https://cssbattle.dev/play/126) |
