@@ -1,0 +1,24 @@
+#letter-a {
+  --black: #000;
+  --beige: #fef9ca;
+  --yellow: #c4b732;
+  --orange: #e38f66;
+  --brown: #aa445f;
+
+  background-color: #62306d;
+
+  div {
+    width: 192px;
+    height: 175px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: 
+    linear-gradient(310deg, transparent 39px, var(--orange) 40px 89px, transparent 90px) 7px bottom / 117px 62px,
+    linear-gradient(-310deg, transparent 39px, var(--brown) 40px 89px, transparent 90px) 68px bottom / 117px 62px,
+    linear-gradient(290deg, transparent 59px, var(--beige) 60px 109px, transparent 110px) left bottom / 117px 175px,
+    linear-gradient(-290deg, transparent 59px, var(--yellow) 60px 109px, transparent 110px) right bottom / 117px 175px;
+    background-repeat: no-repeat;
+  }
+}
