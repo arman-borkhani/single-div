@@ -1,0 +1,80 @@
+#macintosh {
+  --gray: #b6b9bc;
+  --gray-100: #b3b4b9;
+  --gray-200: #8a9faa;
+  --beige: #f7eade;
+  --beige-100: #fbe8e0;
+  --beige-200: #efdbd3;
+  --beige-300: #cfcaca;
+  --teal: #6c8e8c;
+  --teal-100: #538194;
+  --pewter-blue: #89a6b1;
+  --ming: #40717a;
+  --green: #548180;
+  --blue: #1a2e54;
+
+  background-color: #e6f4f1;
+
+  div {
+    width: 352px;
+    height: 332px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: 
+    /* Mouse */
+    linear-gradient(var(--gray-200) 2px, var(--beige-300) 2px 4px, var(--gray) 4px) 228px bottom / 48px 16px,
+    linear-gradient(var(--gray) 2px, var(--beige-100) 2px 4px, var(--beige-200) 4px) 274px bottom / 26px 16px,
+    /* Driver */
+    linear-gradient(var(--blue), var(--blue)) 186px 197px / 28px 16px,
+    linear-gradient(var(--blue), var(--blue)) 119px 201px / 67px 8px,
+    /* Keyboard */
+    linear-gradient(to right, var(--gray-200) 24px, var(--beige) 24px 32px, 
+    var(--gray-200) 32px 54px, var(--beige-100) 54px 62px, 
+    var(--gray-200) 62px 124px, var(--beige) 124px 132px, 
+    var(--gray-200) 132px 154px, var(--beige) 154px 162px, 
+    var(--gray-200) 162px 186px, var(--beige) 186px 194px, 
+    var(--gray-200) 194px 204px, var(--beige) 204px 212px, 
+    var(--gray-200) 212px 222px, var(--beige-100) 222px 230px, 
+    var(--gray-200) 230px 238px, var(--beige) 238px) 10px 240px / 246px 14px,
+    linear-gradient(var(--gray) 16px, var(--gray-200) 16px 18px, var(--beige-300) 18px 20px, var(--gray) 20px) 0 254px / 214px 32px,
+    linear-gradient(var(--beige-200) 16px, var(--gray) 16px 18px, var(--beige-100) 18px 20px, var(--beige-200) 20px) 214px 254px / 54px 32px,
+    repeating-linear-gradient(var(--teal-100) 0 4px, transparent 4px 10px) 260px 230px / 46px 44px,
+    /* Body */
+    linear-gradient(88deg, var(--beige-200) 84%, transparent calc(84% + 1px) ) 256px top / 60px 286px,
+    linear-gradient(to right, var(--beige-100) 2px, var(--gray-100) 2px) 252px top / 4px 286px,
+    linear-gradient(to right, var(--gray) 186px, var(--beige-200) 186px 205px) 47px top / 205px 286px,
+    /* Mouse Cable */
+    linear-gradient(transparent 67px, var(--pewter-blue) 67px) 300px 254px / 16px 70px,
+    radial-gradient(circle at 0 center, transparent 32px, var(--pewter-blue) 32px 35px, transparent 35px) 314px 254px / 35px 70px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  div::before {
+    top: 20px;
+    left: 68px;
+    width: 146px;
+    height: 126px;
+    border-radius: 10px;
+    background: radial-gradient(var(--teal) 65%, transparent calc(65% + 1px)) center -10px / 316px 80px no-repeat var(--green);
+    box-shadow: inset 6px 0 var(--ming);
+  }
+
+  div::after {
+    width: 48px;
+    height: 10px;
+    bottom: 16px;
+    left: 228px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--beige-300);
+    box-shadow: 24px 0 0 0 var(--beige-200);
+  }
+}
