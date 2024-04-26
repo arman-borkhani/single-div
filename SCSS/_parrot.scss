@@ -1,0 +1,72 @@
+#parrot {
+  --red: #fa4846;
+  --red-100: #fb5f5e;
+  --red-200: #fb7876;
+  --red-300: #fc908f;
+  --blue: #3c2bc7;
+  --blue-100: #292879;
+  --blue-200: #1e1d56;
+  --white: #fff;
+  --melon: #ffc1b2;
+  --brown: #792B08;
+
+  background-color: #e4fdbe;
+
+  div {
+    width: 184px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: 
+    /* Tail */
+    linear-gradient(var(--red-200), var(--red-200)) 42px 180px / 30px 90px,
+    radial-gradient(circle at 0 center, var(--red-200) 29px, transparent 30px) 42px 238px / 30px 60px,
+    linear-gradient(var(--red-300), var(--red-300)) 52px 159px / 30px 90px,
+    radial-gradient(circle at 0 center, var(--red-300) 30px, transparent 30px) 52px 220px / 30px 60px,
+    /* Head */
+    radial-gradient(circle at 100% 100%, var(--red) 69px, transparent 70px) 82px 0 / 70px 70px,
+    radial-gradient(circle at 0 100%, var(--blue-200) 39px, transparent 40px) 142px 8px / 40px 40px,
+    radial-gradient(circle at 0 center, var(--blue-100) 19px, transparent 20px) 152px 27px / 20px 40px,
+    /* Branch */
+    linear-gradient(var(--brown), var(--brown)) 0 170px / 160px 24px,
+    linear-gradient(60deg, transparent 50%, var(--brown) calc(50% + 1px)) 100px 190px / 40px 25px; 
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  div::before {
+    top: 62px;
+    left: 42px;
+    width: 110px;
+    height: 130px;
+    border-radius: 50px 0 100px 0;
+    background: 
+    radial-gradient(var(--red) 99px, transparent 100px) -106px -150px / 200px 200px,
+    radial-gradient(var(--red-200) 99px, transparent 100px) -118px -116px / 200px 200px,
+    radial-gradient(var(--red-100) 99px, transparent 100px) -118px -84px / 200px 200px;
+    background-repeat: no-repeat;
+    background-color: var(--red);
+  }
+
+  div::after {
+    width: 40px;
+    height: 80px;
+    top: 0;
+    left: 112px;
+    background: 
+    radial-gradient(var(--white) 2px, transparent 3px) 22px 22px / 6px 6px,
+    radial-gradient(var(--blue) 7px, transparent 8px) 18px 18px / 16px 16px,
+    radial-gradient(circle at 100% center, var(--melon) 29px, transparent 30px) 10px 0 / 30px 60px;
+    background-repeat: no-repeat;
+    background-color: var(--white);
+    border-radius: 60px 0 0 60px;
+  }
+}
