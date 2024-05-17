@@ -1,0 +1,67 @@
+#icecream {
+  --orange: #e7983e;
+  --orange-100: #eaa455;
+  --orange-200: #edb06b;
+  --orange-300: #f0bc82;
+  --orange-400: #f2c899;
+  --pink-primary: #f47d7d;
+  --pink-100: #f69595;
+  --pink-200: #f8adad;
+  --brown: #3b2313;
+
+  background-color: #fceae5;
+
+  div {
+    width: 200px;
+    height: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 120px;
+    background: 
+    linear-gradient(60deg, var(--orange) 10%, var(--orange-100) 20% 30%, var(--orange-200) 30% 40%, var(--orange-300) 40% 50%, var(--orange) 50% 60%, var(--orange-100) 60% 70%, var(--orange-200) 70% 80%, var(--orange-300) 80% 90%, var(--orange) 90%),
+    linear-gradient(120deg, var(--orange) 10%, var(--orange-100) 20% 30%, var(--orange-200) 30% 40%, var(--orange-300) 40% 50%, var(--orange) 50% 60%, var(--orange-100) 60% 70%, var(--orange-200) 70% 80%, var(--orange-300) 80% 90%, var(--orange) 90%);
+    background-blend-mode: overlay;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+  }
+
+  div::after {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 110px;
+    background: 
+    radial-gradient(var(--brown) 16px, transparent 17px) 24px 110px / 34px 34px,
+    radial-gradient(var(--brown) 16px, transparent 17px) 78px 58px / 34px 34px,
+    radial-gradient(var(--brown) 11px, transparent 12px) 136px 44px / 24px 24px,
+    radial-gradient(var(--brown) 11px, transparent 12px) 58px 0 / 24px 24px,
+
+    radial-gradient(var(--pink-200) 39px, transparent 40px) 0 120px / 80px 80px,
+    radial-gradient(var(--pink-200) 27px, transparent 28px) 52px 144px / 56px 56px,
+    radial-gradient(var(--pink-200) 27px, transparent 28px) 144px 144px / 56px 56px,
+    radial-gradient(var(--pink-200) 49px, transparent 50px) 72px 100px / 100px 100px,
+
+    radial-gradient(var(--pink-100) 21px, transparent 22px) 56px 72px / 44px 44px,
+    radial-gradient(var(--pink-100) 44px, transparent 45px) 6px 90px / 90px 90px,
+    radial-gradient(var(--pink-100) 54px, transparent 55px) 86px 56px / 110px 110px,
+
+    radial-gradient(var(--pink-primary) 74px, transparent 75px) 22px 0 / 150px 150px;
+    background-repeat: no-repeat;
+  }
+}
