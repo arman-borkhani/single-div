@@ -1,0 +1,48 @@
+#window {
+  --white: #fff;
+  --gray: #eae9ef;
+  --gray-100: #999bb2;
+  --gray-200: #433e54;
+
+  background-color: #e6f4f1;
+
+  div {
+    width: 200px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: 
+    linear-gradient(var(--gray-200), var(--gray-200)) 25px 115px / 150px 10px,
+    linear-gradient(var(--gray-200), var(--gray-200)) 95px 25px / 10px 190px,
+    linear-gradient(128deg, var(--gray) 45px, var(--white) 45px 60px, var(--gray) 60px 70px, var(--white) 70px 120px, var(--gray) 120px) center / 150px 190px,
+    linear-gradient(var(--gray-200), var(--gray-200)) center / 170px 210px;
+    background-repeat: no-repeat;
+    background-color: var(--gray-100);
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: var(--white);
+  }
+
+  div::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    left: 34px;
+    top: 40px;
+  }
+
+  div::after {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    right: 40px;
+    bottom: 42px;
+  }
+}
