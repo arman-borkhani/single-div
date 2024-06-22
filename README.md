@@ -1,4 +1,4 @@
-# CSS Illustration
+# Single div CSS Illustration
 I decided to have a project like Lynn Fisher's [single div project](https://github.com/lynnandtonic/a-single-div) and explore CSS more.
 Every illustration consists of a single div element and an SCSS file containing CSS code.
 
