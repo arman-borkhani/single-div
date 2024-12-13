@@ -68,4 +68,22 @@
     72px 0 0 #f0eef3,
     36px -203px 0 3px #423b4d;
   }
+
+  div::after {
+    content: "";
+    position: absolute;
+    width: 362px;
+    height: 90px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: 
+    radial-gradient(#97984d 34px, transparent 35px) 290px 0 / 70px 70px,
+    radial-gradient(#97984d 19px, transparent 20px) 34px 37px / 40px 40px,
+    radial-gradient(#676a4d 29px, transparent 30px) 0 10px / 60px 60px,
+    linear-gradient(#6e3e32, #6e3e32) 322px bottom / 4px 25px,
+    linear-gradient(#6e3e32, #6e3e32) 52px bottom / 4px 20px,
+    linear-gradient(#6e3e32, #6e3e32) 29px bottom / 4px 28px;
+    background-repeat: no-repeat;
+  }
 }
