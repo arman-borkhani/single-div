@@ -1,0 +1,82 @@
+#lighthouse {
+  background-color: #f6f1dd;
+
+  div {
+    width: 220px;
+    height: 356px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:
+    linear-gradient(#00314f, #00314f) 150px 346px / 16px 10px,
+    linear-gradient(#00314f, #00314f) 30px 346px / 100px 10px,
+    linear-gradient(#00314f, #00314f) 64px 336px / 32px 10px,
+    linear-gradient(#00314f, #00314f) 54px 326px / 140px 10px,
+    linear-gradient(#00314f, #00314f) 116px 316px / 52px 10px,
+    linear-gradient(#00314f, #00314f) 64px 306px / 116px 10px,
+    linear-gradient(#00314f, #00314f) 30px 306px / 16px 10px,
+    linear-gradient(#00314f, #00314f) 76px 296px / 48px 10px,
+    linear-gradient(#00314f, #00314f) 51px 286px / 118px 10px,
+    radial-gradient(#00314f 4px, transparent 4px) 106px 39px / 8px 8px,
+    linear-gradient(#00314f, #00314f) 106px 44px / 8px 8px,
+    conic-gradient(from 110deg at 50% 0, #00314f 0 140deg, transparent 0 100%) 87px 49px / 46px 12px,
+    linear-gradient(#00314f, #00314f) 87px 59px / 46px 8px,
+    linear-gradient(#00314f, #00314f) 81px 67px / 58px 8px,
+    radial-gradient(#f6f1dd 6px, transparent 6px) 104px 36px / 12px 12px,
+    linear-gradient(#f6f1dd, #f6f1dd) 104px 40px / 12px 10px,
+    conic-gradient(from 110deg at 50% 0, #f6f1dd 0 140deg, transparent 0 100%) 84px 46px / 52px 12px,
+    linear-gradient(#f6f1dd, #f6f1dd) 84px 56px / 52px 8px,
+    linear-gradient(#f6f1dd, #f6f1dd) 78px 64px / 64px 14px,
+    linear-gradient(to right, #f6f1dd 3px, #00314f 3px 13px, #f6f1dd 13px 16px, #00314f 16px 34px, #f6f1dd 34px 37px, #00314f 37px 47px, #f6f1dd 47px) 85px 74px / 50px 32px,
+    linear-gradient(#00314f, #00314f) 81px 108px / 58px 8px,
+    linear-gradient(#f6f1dd, #f6f1dd) 78px 105px / 64px 14px,
+    linear-gradient(-86deg, #f6f1dd 50%, transparent calc(50% + 1px)) 52px 116px / 60px 170px,
+    linear-gradient(86deg, #f6f1dd 50%, transparent calc(50% + 1px)) 108px 116px / 60px 170px,
+    radial-gradient(#ffc72a 109px, transparent 110px) 0 0 / 220px 220px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  div::before {
+    width: 62px;
+    height: 170px;
+    left: 79px;
+    top: 116px;
+    background: linear-gradient(164deg, #f6f1dd 0 9px, #00314f 10px 39px, #f6f1dd 40px 69px, #00314f 70px 99px, #f6f1dd 100px 129px, #00314f 130px);
+    clip-path: polygon(12px 0, 50px 0, 100% 100%, 0 100%);
+  }
+
+  div::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00314f;
+    left: 46px;
+    top: 286px;
+    box-shadow: 
+    115px 60px 0 #00314f,
+    99px 60px 0 #00314f,
+    79px 60px 0 #00314f,
+    -20px 60px 0 #00314f,
+    45px 50px 0 #f6f1dd,
+    13px 50px 0 #f6f1dd,
+    143px 40px 0 #00314f,
+    3px 40px 0 #00314f,
+    117px 30px 0 #f6f1dd,
+    65px 30px 0 #f6f1dd,
+    129px 20px 0 #00314f,
+    13px 20px 0 #00314f,
+    -5px 20px 0 #00314f,
+    -21px 20px 0 #00314f,
+    73px 10px 0 #f6f1dd,
+    25px 10px 0 #f6f1dd,
+    118px 0 0 #00314f;
+  }
+}
