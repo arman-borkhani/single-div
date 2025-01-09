@@ -1,0 +1,68 @@
+#gentleman {
+  div {
+    width: 182px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:
+    /* Hairs */
+    conic-gradient(from 0 at 0 15px, transparent 80deg, #000 80deg) 34px 0 / 82px 38px,
+    conic-gradient(from 180deg at 100% 24px, transparent 10deg, #000 10deg 138deg, transparent 138deg) 115px 0 / 22px 122px,
+    conic-gradient(from 0 at 0 20px, transparent 30deg, #000 30deg 162deg, transparent 162deg) 22px 15px / 18px 62px,
+    /* Face Shadow */
+    conic-gradient(from 90deg at 0 0, #000 74deg, transparent 74deg) 42px 100px / 60px 60px,
+    /* Neck */
+    conic-gradient(from 0 at 0 100%, #000 12deg, #f23b23 12deg 34deg, #fff 34deg) 102px 128px / 18px 60px,
+    conic-gradient(from -90deg at 17px 100%, transparent 47deg, #000 47deg 148deg,transparent 148deg) 60px 160px / 42px 44px,
+    /* Ears */
+    conic-gradient(from -55deg at 8px 100%, #f23b23 88deg, transparent 88deg) 120px 76px / 20px 30px,
+    conic-gradient(from -33deg at 12px 100%, #000 88deg, transparent 88deg) 24px 76px / 20px 30px,
+    /* Body */
+    conic-gradient(from -90deg at 24px 100%, transparent 80deg, #fff 80deg 106deg, transparent 106deg) 57px 178px / 64px 144px,
+    conic-gradient(from 0deg at 0 36px, transparent 58deg, #000 58deg 154deg, transparent 154deg) 0 bottom / 82px 154px,
+    conic-gradient(from 180deg at 100% 24px, transparent 30deg, #000 30deg 110deg, transparent 110deg) right bottom / 100px 170px;
+    background-repeat: no-repeat;
+  }
+
+  div::before,
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  div::before {
+    left: 70px;
+    top: 210px;
+    width: 23px;
+    height: 114px;
+    background-color: #f23b23;
+    clip-path: polygon(7px 0, 19px 16px, 13px 22px, 23px 71px, 11px 100%, 3px 69px, 7px 22px, 0 12px);
+  }
+
+  div::after {
+    left: 35px;
+    top: 15px;
+    width: 85px;
+    height: 160px;
+    background: 
+    /* Mouth */
+    linear-gradient(#000 3px, #f23b23 4px) 36px 140px / 24px 6px,
+    radial-gradient(circle at center -6px, #000 11px, transparent 12px) 36px 145px / 24px 6px,
+    /* Eyes */
+    radial-gradient(circle at center -6px, #000 11px, transparent 12px) 10px 74px / 24px 6px,
+    radial-gradient(circle at center -6px, #000 11px, transparent 12px) 51px 74px / 24px 6px,
+    /* Nose */
+    conic-gradient(from -66deg at 13px 100%, #000 103deg, transparent 104deg) 35px 130px / 20px 8px,
+    linear-gradient(90deg, #000 4px, #f23b23 5px) 35px 62px / 14px 70px,
+    /* Eyebrows */
+    linear-gradient(#000 18px, #f23b23 18px 28px, #000 28px) 8px 62px / 72px 8px,
+    /* Shadow */
+    conic-gradient(from -11deg at 14px 58px, #f23b23 34deg, #fff 35deg) right bottom / 36px 90px;
+    background-repeat: no-repeat;
+    background-color: #f23b23;
+    clip-path: polygon(0 16px, 16px 10px, 34px 21px, 61px 0, 100% 8px, 100% 117px, 63px 100%, 37px 100%, 5px 75px);
+  }
+}
